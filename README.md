@@ -35,9 +35,9 @@ macOS / Windows / Linux 包均为原测试交付中的桌面导出。macOS zip �
 
 ## Web 版 / Web build
 
-计划中的独立路径是 <https://page.thweki.com:8443/tidepost/>（站点只在端口 **8443** 提供服务，不是 443）。**公开站点的隔离部署仍待协调，请先用 Release 里的 `Tidepost-2.0.0-web.zip` 或本地 HTTP 服务试玩。交互游玩尚未经浏览器实测，不能视为已经通过。**
+计划中的独立路径是 <https://page.thweki.com:8443/tidepost/>（站点只在端口 **8443** 提供服务，不是 443）。公开站点发布由其他流程负责；**本次浏览器短烟测是在代理电脑的 `http://127.0.0.1:8870/tidepost/` 完成的，不是用户的 Mac，也不代表公开 URL 已验证。** 这只是一次短烟测，**不是测试通过，也不是完整 QA。** 范围、未测事项和截图见 [TESTING.md](TESTING.md)。
 
-The planned isolated path is <https://page.thweki.com:8443/tidepost/> (port **8443**, not 443). **Coordinated isolated publication is still pending. Use `Tidepost-2.0.0-web.zip` from the Release, or a local HTTP server, for now. Interactive play has not been browser-verified and must not be treated as passing.**
+The planned isolated path is <https://page.thweki.com:8443/tidepost/> (port **8443**, not 443). Public-site publication is handled separately. **The short browser smoke test was run on the publishing agent’s computer at `http://127.0.0.1:8870/tidepost/`, not on the user’s Mac, and it does not verify the public URL.** It is **not a pass and not a complete QA.** Scope, untested items, and screenshots: [TESTING.md](TESTING.md).
 
 原包没有 Web 导出预设。Web 版本如已提供，是后来用与项目匹配的官方 Godot 4.7.2 导出模板另外打包的，不会改动上方桌面包的游戏内容。已提交源码快照保持原样；后续变更记在 [CHANGES.md](CHANGES.md)。
 
@@ -72,4 +72,5 @@ There is **no project-level license** for the original source and assets. Publis
 - `game/`、`tools/`、`notices/`：原始源码快照
 - `ORIGINAL-README.md`：原包 README 的逐字节副本
 - `PACKAGING.md`、`CHANGES.md`：公开时的打包与后续变更记录
+- `TESTING.md`、`docs/browser-smoke-2026-11-18/`：2026-11-18 短烟测记录与事后验证截图（不是原包美术）
 - 大视频与桌面 zip **不**进入 git 历史，只放在 Release
