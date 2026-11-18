@@ -1,0 +1,10 @@
+# Local Godot / tool caches — not part of the snapshot
+.godot/
+**/.godot/
+__pycache__/
+*.pyc
+.DS_Store
+# Release binaries and videos belong in GitHub Releases, not git history
+/release/
+*.zip
+*.mp4
