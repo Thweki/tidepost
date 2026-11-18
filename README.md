@@ -35,9 +35,9 @@ macOS / Windows / Linux 包均为原测试交付中的桌面导出。macOS zip �
 
 ## Web 版 / Web build
 
-目标试玩地址：<https://page.thweki.com:8443/tidepost/>（站点仅提供 **8443** 端口，不是 443）。若该路径已部署，也只表示静态文件已上传；**交互游玩尚未经浏览器实测，不能视为已经通过。**
+计划中的独立路径是 <https://page.thweki.com:8443/tidepost/>（站点只在端口 **8443** 提供服务，不是 443）。**公开站点的隔离部署仍待协调，请先用 Release 里的 `Tidepost-2.0.0-web.zip` 或本地 HTTP 服务试玩。交互游玩尚未经浏览器实测，不能视为已经通过。**
 
-Intended play URL: <https://page.thweki.com:8443/tidepost/> (this site is served on port **8443**, not 443). If the path is deployed, that only means the static files were uploaded; **interactive play has not been browser-verified and must not be treated as passing.**
+The planned isolated path is <https://page.thweki.com:8443/tidepost/> (port **8443**, not 443). **Coordinated isolated publication is still pending. Use `Tidepost-2.0.0-web.zip` from the Release, or a local HTTP server, for now. Interactive play has not been browser-verified and must not be treated as passing.**
 
 原包没有 Web 导出预设。Web 版本如已提供，是后来用与项目匹配的官方 Godot 4.7.2 导出模板另外打包的，不会改动上方桌面包的游戏内容。已提交源码快照保持原样；后续变更记在 [CHANGES.md](CHANGES.md)。
 

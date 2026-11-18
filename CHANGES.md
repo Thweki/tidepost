@@ -14,3 +14,14 @@
 - macOS Release zip 仅处理 UTF-8 语言位，见 `PACKAGING.md`。
 - 桌面包与视频不进入 git 历史。
 - 原快照没有 Web 导出预设；如有 Web 版，将另开记录。
+
+## 2026-11-18 — Web export package (not a source change)
+
+- Exported a browser build in a throwaway working copy with official Godot **4.7.2.stable** templates, `variant/thread_support=false`, and `ensureCrossOriginIsolationHeaders=false`, so the site would not need new COOP/COEP headers.
+- The committed `game/export_presets.cfg` and other game source were **not** modified. The temporary Web preset was not merged.
+- Release asset: `Tidepost-2.0.0-web.zip` (SHA-256 `a83893d4990b58d3e1350ef01a15f2fc9cac69f81ffb3b70d02d359c1c62b715`). File list and hashes: `WEB-SHA256SUMS.txt`.
+- Public path `https://page.thweki.com:8443/tidepost/` is the intended isolated location, but coordinated isolated deployment is still pending. Interactive play has not been browser-verified.
+
+- 在一次性工作副本中用官方 Godot 4.7.2 无线程模板导出了 Web 包；已提交的源码与 `export_presets.cfg` 未改。
+- 公开路径待协调隔离部署后再上线。交互游玩尚未经浏览器实测。
+
